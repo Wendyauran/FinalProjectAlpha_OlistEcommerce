@@ -202,3 +202,6 @@ Customer retention and repeat purchase are the main business problems in Olist E
 * Apply outlier treatment & log transformation
 * Add behavioral features (AOV, CLV)
 * Test cluster stability across time periods
+
+# L. Dashboards & Apps
+- Tableau Dashboard: [Click here](https://public.tableau.com/app/profile/wendy.auran.petraz/viz/OlistDashboard_17701246716370/OlistDashboard)
