@@ -143,6 +143,3 @@ Customer retention and repeat purchase are the main business problems in Olist E
 - Apply a more systematic treatment of extreme values, such as log transformation, to prevent them from distorting the clustering results.
 - Add behavioral value features (AOV, CLV)
 - Apply stronger outlier treatment and stability testing
-- Test alternative clustering methods
-- Add behavioral value features (AOV, CLV)
-- Apply stronger outlier treatment and stability testing
