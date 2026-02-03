@@ -120,7 +120,6 @@ Customer segmentation using **KMeans** produced 3 clusters.
 * Pandas, NumPy
 * Matplotlib, Seaborn
 * KMeans Clustering
-* Tableau Dashboard [Tableau](https://public.tableau.com/app/profile/wendy.auran.petraz/viz/OlistDashboard_17701246716370/OlistDashboard)
 
 ---
 
@@ -143,3 +142,6 @@ Customer retention and repeat purchase are the main business problems in Olist E
 - Apply a more systematic treatment of extreme values, such as log transformation, to prevent them from distorting the clustering results.
 - Add behavioral value features (AOV, CLV)
 - Apply stronger outlier treatment and stability testing
+
+# M. Dashboard & Apps
+- Tableau Dashboard: [Click here](https://public.tableau.com/app/profile/wendy.auran.petraz/viz/OlistDashboard_17701246716370/OlistDashboard)
