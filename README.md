@@ -120,6 +120,7 @@ Customer segmentation using **KMeans** produced 3 clusters.
 * Pandas, NumPy
 * Matplotlib, Seaborn
 * KMeans Clustering
+* Tableau [Tableau](https://public.tableau.com/app/profile/wendy.auran.petraz/viz/OlistDashboard_17701246716370/OlistDashboard)
 
 ---
 
