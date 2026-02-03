@@ -114,23 +114,23 @@ Customer segmentation using **KMeans** produced 3 clusters.
 
 ---
 
-# I. Tools (Tech Stack)
+# J. Tools (Tech Stack)
 
 * Python
 * Pandas, NumPy
 * Matplotlib, Seaborn
 * KMeans Clustering
-* Tableau [Tableau](https://public.tableau.com/app/profile/wendy.auran.petraz/viz/OlistDashboard_17701246716370/OlistDashboard)
+* Tableau Dashboard [Tableau](https://public.tableau.com/app/profile/wendy.auran.petraz/viz/OlistDashboard_17701246716370/OlistDashboard)
 
 ---
 
-# J. Conclusion
+# K. Conclusion
 
 Customer retention and repeat purchase are the main business problems in Olist Ecommerce by 2017-2018 data, with most users buying only once. RFM and cohort analysis confirm extremely low retention. Machine learning clustering reveals three distinct behavioral segments driven mainly by transaction value, frequency, price level, and installment usage. These segments enable more precise, behavior-based marketing and retention strategies.
 
 ---
 
-# K. Recommendations
+# L. Recommendations
 
 ## Business
 - Run campaigns during early-week peak hours
