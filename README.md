@@ -176,10 +176,8 @@ Customer segmentation using **KMeans** produced 3 clusters.
 
 * Python
 * Pandas, NumPy
-* Scikit-Learn
 * Matplotlib, Seaborn
 * KMeans Clustering
-* RFM & Cohort Analysis
 
 ---
 
