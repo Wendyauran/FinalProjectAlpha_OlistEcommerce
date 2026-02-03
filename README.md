@@ -2,7 +2,7 @@
 
 Segmenting Customers to Support Retention, Campaign Targeting, and Purchase Frequency Growth
 
-**Data Source:** Olist Brazil E-Commerce Public Dataset
+**Data Source:** Olist Brazil E-Commerce Public Dataset [Dataset Source](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 ---
 
@@ -23,7 +23,6 @@ Transaction data shows that:
 * Most customers purchase only once
 * Repeat buying is very low
 * Retention rate is below 1%
-* Review score is strongly affected by delivery performance
 * Campaigns are not yet behavior-based
 
 Without behavioral segmentation, marketing and retention efforts are less effective and inefficient.
@@ -64,7 +63,7 @@ Without behavioral segmentation, marketing and retention efforts are less effect
 * Delivery time vs review score
 * Geographic concentration
 
-## Customer Modeling
+## Customer Analysis & Modeling
 
 * RFM Analysis
 * Cohort Retention Analysis
@@ -93,8 +92,7 @@ Clustering quality evaluated using:
 
 ## Geographic Insight
 
-* Orders highly concentrated in **Sao Paulo**
-* Large gap between metro vs non-metro demand
+* Orders highly concentrated in **Sao Paulo**. Large gap between metro vs non-metro demand.
 
 ## Product & Payment Behavior
 
@@ -104,11 +102,11 @@ Clustering quality evaluated using:
 
 ## Delivery & Review
 
-* ~21% low reviews (score 1–3)
+* ~21% low reviews (score 1–3 are categorized as bad reviews in this analysis)
 * Longer delivery → lower review score
 * Main bottleneck at **last-mile delivery**
 
-## RFM & Retention
+## RFM & Retention Rate (Cohort Analysis)
 
 * Most customers have frequency = 1
 * Retention rate < 1%
@@ -152,7 +150,6 @@ Customer segmentation using **KMeans** produced 3 clusters.
 * Low installments
 * High review score
 * Dominant category: bed_bath_table
-  **Meaning:** satisfied but low spend → upsell opportunity
 
 ---
 
@@ -162,7 +159,6 @@ Customer segmentation using **KMeans** produced 3 clusters.
 * Low frequency
 * Low review score
 * Dominant category: office_furniture
-  **Meaning:** high value but churn risk
 
 ---
 
@@ -173,7 +169,6 @@ Customer segmentation using **KMeans** produced 3 clusters.
 * Large ticket size
 * Mixed but generally good reviews
 * Dominant category: watches_gift
-  **Meaning:** premium buyers using installment schemes
 
 ---
 
@@ -190,7 +185,7 @@ Customer segmentation using **KMeans** produced 3 clusters.
 
 # J. Conclusion
 
-Customer retention and repeat purchase are the main business gaps, with most users buying only once. RFM and cohort analysis confirm extremely low retention. Machine learning clustering reveals three distinct behavioral segments driven mainly by transaction value, frequency, price level, and installment usage — not by recency or geography. These segments enable more precise, behavior-based marketing and retention strategies.
+Customer retention and repeat purchase are the main business problems in Olist Ecommerce by 2017-2018 data, with most users buying only once. RFM and cohort analysis confirm extremely low retention. Machine learning clustering reveals three distinct behavioral segments driven mainly by transaction value, frequency, price level, and installment usage. These segments enable more precise, behavior-based marketing and retention strategies.
 
 ---
 
@@ -201,11 +196,7 @@ Customer retention and repeat purchase are the main business gaps, with most use
 * Focus campaigns on early-week peak hours
 * Prioritize Sao Paulo for marketing & fulfillment efficiency
 * Improve last-mile delivery performance to raise review scores
-* Apply **cluster-based campaign & retention strategy**:
-
-  * Upsell for low-spend satisfied buyers
-  * Service recovery & priority support for high-spend at-risk buyers
-  * Premium & installment promos for premium buyers
+* Apply **cluster-based campaign & retention strategy**
 
 ## Model
 
