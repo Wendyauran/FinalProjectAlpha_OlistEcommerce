@@ -109,7 +109,7 @@ Customer segmentation using **KMeans** produced 3 clusters.
 # I. Customer Segment Profiles
 
 - Cluster 0 — Satisfied & Low-Spend Buyers: Low transaction value, low price products, low installment usage, high satisfaction.
-- Cluster 1 — High-Spend At-Risk BuyersL Very high spending, low frequency, lower review scores, churn risk.
+- Cluster 1 — High-Spend At-Risk Buyers: Very high spending, low frequency, lower review scores, churn risk.
 - Cluster 2 — Premium Installment Buyers: High price products, high installment usage, premium-oriented purchases.
 
 ---
