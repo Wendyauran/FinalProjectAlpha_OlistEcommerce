@@ -10,9 +10,9 @@ Segmenting Customers to Support Retention, Campaign Targeting, and Purchase Freq
 
 Brazil’s e-commerce market is growing rapidly, driven by strong digital adoption, instant payment systems, and logistics improvements. Competition among platforms is increasing, making **customer retention and repeat purchase** critical growth drivers.
 
-Olist is a major Brazilian marketplace that connects sellers and buyers with integrated logistics support. While transaction volume grows, long-term customer engagement remains a key challenge.
+Olist is a major Brazilian marketplace that connects sellers and buyers with integrated logistics support. While **transaction volume grows, long-term customer retention rate and engagement remains a key challenge**.
 
-To compete effectively, the platform needs **data-driven customer segmentation** to support targeted marketing and retention strategies.
+To compete effectively, the platform needs **data-driven customer segmentation** to support targeted marketing and retention strategies to **improve retention rate and repeat purchases**.
 
 ---
 
@@ -25,50 +25,30 @@ Transaction data shows that:
 * Retention rate is below 1%
 * Campaigns are not yet behavior-based
 
-Without behavioral segmentation, marketing and retention efforts are less effective and inefficient.
+Without behavioral segmentation, marketing and retention efforts and budget are less effective and inefficient.
 
 ---
 
 # C. Goals
 
-* Build customer segmentation using machine learning
 * Identify key behavioral differences between customer groups
 * Support retention & repeat purchase strategy
 * Improve campaign targeting effectiveness
-* Enable data-driven marketing decisions
+* Build customer segmentation using machine learning
 
 ---
 
 # D. Analytical Approach
 
-## Data Understanding
-
-* Explore transaction, customer, product, payment, and review data
-* Analyze order trend, revenue trend, time pattern, and geography
-* Study delivery performance and review behavior
-
-## Data Preprocessing & Feature Engineering
-
-* Data cleaning & missing value handling
-* Multi-table dataset merging
-* Feature engineering (behavioral & transactional features)
-* Encoding categorical variables
-* Feature scaling
-
-## Behavioral Analysis
-
-* Order & revenue trends
-* Time-of-day & day-of-week patterns
-* Product category & payment behavior
-* Delivery time vs review score
-* Geographic concentration
-
-## Customer Analysis & Modeling
-
-* RFM Analysis
-* Cohort Retention Analysis
-* **KMeans Clustering for customer segmentation**
-
+- EDA: Data exploration and behavioral pattern analysis
+- Data cleaning, merging, and feature engineering (feature selection and scalling)
+- RFM and Cohort analysis (Retention Rate)
+- Modelling and Interpretation:
+  - Customer segmentation using KMeans clustering
+  - Optimal cluster selection using Elbow & Silhouette methods
+  - Cluster interpretation for business strategy
+- Conclusion & Recommendation
+  
 ---
 
 # E. Evaluation Metrics
@@ -78,43 +58,28 @@ Clustering quality evaluated using:
 * **Elbow Method** — optimal cluster count via SSE curve
 * **Silhouette Score** — cluster separation quality
 * Business interpretability of each cluster profile
+  
+Both methods indicate the optimal number of clusters at K = 3, resulting in three customer clusters (0, 1, 2).
 
 ---
 
 # F. Key Behavioral Insights
 
-## Order & Time Pattern
+- Order volume peaks on Monday–Tuesday and during 10:00–16:00 hours
+- Revenue and order volume show steady growth with strong spikes during major promo events
+- Orders and customers are highly concentrated in Sao Paulo
+- Top product categories: bed_bath_table and health_beauty
+- ~21% low reviews (score 1–3). Longer delivery → lower review score. Main bottleneck at last-mile delivery
 
-* Highest orders: **Monday–Tuesday**
-* Peak hours: **10:00–16:00**
-* Strong spike during major promotion events (e.g., Black Friday)
-* Orders and revenue show consistent growth trend
+# G. RFM & Retention
 
-## Geographic Insight
-
-* Orders highly concentrated in **Sao Paulo**. Large gap between metro vs non-metro demand.
-
-## Product & Payment Behavior
-
-* Top categories: **bed_bath_table** and **health_beauty**
-* Dominant payment method: **credit card**
-* Most transactions without installments
-
-## Delivery & Review
-
-* ~21% low reviews (score 1–3 are categorized as bad reviews in this analysis)
-* Longer delivery → lower review score
-* Main bottleneck at **last-mile delivery**
-
-## RFM & Retention Rate (Cohort Analysis)
-
-* Most customers have frequency = 1
-* Retention rate < 1%
-* Repeat purchase is the core business challenge
+- Most customers have frequency = 1
+- Retention rate < 1%
+- Repeat purchase is low
 
 ---
 
-# G. Machine Learning Segmentation Result
+# H. Machine Learning Segmentation Result
 
 Customer segmentation using **KMeans** produced 3 clusters.
 
@@ -125,7 +90,7 @@ Customer segmentation using **KMeans** produced 3 clusters.
 * Price
 * Payment Installments
 
-## Not Strong Differentiators
+## Other Features But Not The Strong Differentiators
 
 * Recency (relatively uniform)
 * Payment method
@@ -141,34 +106,11 @@ Customer segmentation using **KMeans** produced 3 clusters.
 
 ---
 
-# H. Customer Segment Profiles
+# I. Customer Segment Profiles
 
-## Cluster 0 — Satisfied & Low-Spend Buyers
-
-* Low transaction value
-* Low price products
-* Low installments
-* High review score
-* Dominant category: bed_bath_table
-
----
-
-## Cluster 1 — High-Spend At-Risk Buyers
-
-* Highest monetary value
-* Low frequency
-* Low review score
-* Dominant category: office_furniture
-
----
-
-## Cluster 2 — Premium Installment Buyers
-
-* High product price
-* High installments
-* Large ticket size
-* Mixed but generally good reviews
-* Dominant category: watches_gift
+- Cluster 0 — Satisfied & Low-Spend Buyers: Low transaction value, low price products, low installment usage, high satisfaction.
+- Cluster 1 — High-Spend At-Risk BuyersL Very high spending, low frequency, lower review scores, churn risk.
+- Cluster 2 — Premium Installment Buyers: High price products, high installment usage, premium-oriented purchases.
 
 ---
 
@@ -190,18 +132,16 @@ Customer retention and repeat purchase are the main business problems in Olist E
 # K. Recommendations
 
 ## Business
-
-* Focus campaigns on early-week peak hours
-* Prioritize Sao Paulo for marketing & fulfillment efficiency
-* Improve last-mile delivery performance to raise review scores
-* Apply **cluster-based campaign & retention strategy**
+- Run campaigns during early-week peak hours
+- Focus operational and marketing efforts in Sao Paulo
+- Improve last-mile delivery performance
+- Apply segment-based retention and campaign strategies
 
 ## Model
-
-* Compare with alternative clustering (DBSCAN, Hierarchical, GMM)
-* Apply outlier treatment & log transformation
-* Add behavioral features (AOV, CLV)
-* Test cluster stability across time periods
-
-# L. Dashboards & Apps
-- Tableau Dashboard: [Click here](https://public.tableau.com/app/profile/wendy.auran.petraz/viz/OlistDashboard_17701246716370/OlistDashboard)
+- Test alternative clustering methods (DBSCAN, Hierarchal Clustering and Gaussian Mixture Models
+- Apply a more systematic treatment of extreme values, such as log transformation, to prevent them from distorting the clustering results.
+- Add behavioral value features (AOV, CLV)
+- Apply stronger outlier treatment and stability testing
+- Test alternative clustering methods
+- Add behavioral value features (AOV, CLV)
+- Apply stronger outlier treatment and stability testing
