@@ -1,4 +1,4 @@
-# 📊 Customer Segmentation with Machine Learning to Improve Customer Retention and Purchase Frequency for Olist E-Commerce
+# Customer Segmentation with Machine Learning to Improve Customer Retention and Purchase Frequency for Olist E-Commerce
 
 Segmenting Customers to Support Retention, Campaign Targeting, and Purchase Frequency Growth
 
